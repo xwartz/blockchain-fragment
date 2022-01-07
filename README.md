@@ -1,17 +1,11 @@
-# ts-node-template
+# chain-fragment
 
-Template for typescript-node project
+Blockchain-related code fragment or demo.
 
 ## Usage
 
 ### dev
 ```
 $ yarn install
-$ yarn start
-```
-
-### build
-
-```
-yarn build # create a production build
+$ yarn optimism
 ```

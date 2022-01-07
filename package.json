@@ -1,9 +1,9 @@
 {
-  "name": "ts-node-template",
+  "name": "chain-fragment",
   "version": "1.0.0",
   "description": "Template for typescript-node project",
-  "repository": "git@github.com:xwartz/ts-node-template.git",
-  "homepage": "https://github.com/xwartz/ts-node-template",
+  "repository": "git@github.com:xwartz/chain-fragment.git",
+  "homepage": "https://github.com/xwartz/chain-fragment",
   "author": "xwartz <stddup@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
@@ -13,10 +13,9 @@
     "!dist/**/*.test.*"
   ],
   "scripts": {
-    "start": "ts-node ./src/index.ts",
     "build": "yarn clean && tsc",
     "clean": "rm -rf dist",
-    "release": "yarn publish --access public --non-interactive"
+    "optimism": "ts-node ./src/optimism/index.ts"
   },
   "engines": {
     "node": ">=16.13.0"
@@ -29,5 +28,9 @@
     "prettier": "^2.4.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@eth-optimism/contracts": "^0.5.7",
+    "ethers": "^5.5.2"
   }
 }
