@@ -27,7 +27,7 @@
     "eslint": "^8.10.0",
     "prettier": "^2.5.1",
     "ts-node": "^10.5.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "dependencies": {
     "@eth-optimism/contracts": "^0.5.15",
