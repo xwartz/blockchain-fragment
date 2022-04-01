@@ -29,25 +29,27 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@eth-optimism/contracts@^0.5.15":
-  version "0.5.15"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/contracts/-/contracts-0.5.15.tgz#71f538172acc1bab0894ead13468a7063b078adf"
-  integrity sha512-UP3YnxuYebZS4Py2KMTE5AbkuEu/Yk/EtX9AOm0xLCxh+htet2oQ/GahwleLIq8mW2pFtchzc4zARYUJal49ug==
+"@eth-optimism/contracts@^0.5.18":
+  version "0.5.18"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/contracts/-/contracts-0.5.18.tgz#54b3d05ef95e68dc5154786c7c4dd252f5ce1706"
+  integrity sha512-1GyPR2raj/BR1isujE4dlJeHpt2+PVkGzwXCslSwFcgy/A0K0/z/u2j77qiUVVTcseV9MYmdYJiTWdlo/Df2Ew==
   dependencies:
-    "@eth-optimism/core-utils" "0.8.0"
+    "@eth-optimism/core-utils" "0.8.1"
     "@ethersproject/abstract-provider" "^5.5.1"
     "@ethersproject/abstract-signer" "^5.5.0"
     "@ethersproject/hardware-wallets" "^5.5.0"
 
-"@eth-optimism/core-utils@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/core-utils/-/core-utils-0.8.0.tgz#d2ab90aaea0a7df13157bf3f461c9a8d1893f2ac"
-  integrity sha512-ms/fhyvPyxU4sBNHQ8L4DcLzNes2ioZnPYeZQ41q40ciYkRZEfTXmXxtQOTVSRDPBz8PtaHMLRnxVOiwcP2ncg==
+"@eth-optimism/core-utils@0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/core-utils/-/core-utils-0.8.1.tgz#ee7d8815f9ddb67ca3e2f3ec1d8515a46af5caf6"
+  integrity sha512-GJJvw9cBekvR1xH/f2jpgp6MnbWlMBaVm1h3BA0sEzmlaFufTG4ybGrHkL3nQT0Vqtjs3LYjaExkVmsUzpb7xg==
   dependencies:
     "@ethersproject/abstract-provider" "^5.5.1"
     "@ethersproject/bytes" "^5.5.0"
     "@ethersproject/providers" "^5.5.3"
+    "@ethersproject/transactions" "^5.5.0"
     "@ethersproject/web" "^5.5.1"
+    bufio "^1.0.7"
     chai "^4.3.4"
     ethers "^5.5.4"
 
@@ -792,6 +794,11 @@ buffer@^5.5.0:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+bufio@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/bufio/-/bufio-1.0.7.tgz#b7f63a1369a0829ed64cc14edf0573b3e382a33e"
+  integrity sha512-bd1dDQhiC+bEbEfg56IdBv7faWa6OipMs/AFFFvtFnB3wAYjlwQpQRZ0pm6ZkgtfL0pILRXhKxOiQj6UzoMR7A==
 
 callsites@^3.0.0:
   version "3.1.0"
