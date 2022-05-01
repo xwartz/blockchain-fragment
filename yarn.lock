@@ -29,20 +29,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@eth-optimism/contracts@^0.5.18":
-  version "0.5.18"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/contracts/-/contracts-0.5.18.tgz#54b3d05ef95e68dc5154786c7c4dd252f5ce1706"
-  integrity sha512-1GyPR2raj/BR1isujE4dlJeHpt2+PVkGzwXCslSwFcgy/A0K0/z/u2j77qiUVVTcseV9MYmdYJiTWdlo/Df2Ew==
+"@eth-optimism/contracts@^0.5.21":
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/contracts/-/contracts-0.5.21.tgz#8f7d4ab8ca19fce9f4e18397a4b7c94e5c86e169"
+  integrity sha512-cVHL95buBeeeHxA35g9Dz9zauw9XNOBgcFNDOkKm/3HGNyOlmcfkjZbSlxfAUzUrmXE1EdQz+Y9nLd05GHI6gw==
   dependencies:
-    "@eth-optimism/core-utils" "0.8.1"
+    "@eth-optimism/core-utils" "0.8.3"
     "@ethersproject/abstract-provider" "^5.5.1"
     "@ethersproject/abstract-signer" "^5.5.0"
     "@ethersproject/hardware-wallets" "^5.5.0"
 
-"@eth-optimism/core-utils@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/core-utils/-/core-utils-0.8.1.tgz#ee7d8815f9ddb67ca3e2f3ec1d8515a46af5caf6"
-  integrity sha512-GJJvw9cBekvR1xH/f2jpgp6MnbWlMBaVm1h3BA0sEzmlaFufTG4ybGrHkL3nQT0Vqtjs3LYjaExkVmsUzpb7xg==
+"@eth-optimism/core-utils@0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/core-utils/-/core-utils-0.8.3.tgz#226d6ac4cb80bd165d64f5ffa4f3e0b300568678"
+  integrity sha512-jM3dPAg9TinskLyH4w9KofEqgLWJsf5VrlC8a2/0zKNlZUJuVzE/ZYfcq243qqlJn1vb4QkBKjYVHKMu1Wjzjg==
   dependencies:
     "@ethersproject/abstract-provider" "^5.5.1"
     "@ethersproject/bytes" "^5.5.0"
