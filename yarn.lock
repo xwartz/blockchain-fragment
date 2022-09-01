@@ -24,23 +24,25 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eth-optimism/contracts@^0.5.31":
-  version "0.5.31"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/contracts/-/contracts-0.5.31.tgz#2f5a9be37b4c309909d8206c877710e9769af858"
-  integrity sha512-I07EeyBBWwSsB6I/GodOLRydDtefWx4sdL3wCvNLSoCIUl2hUyisMmtTojOBXeT6vvfbiYkWc8jZlfXdbyJ7fA==
+"@eth-optimism/contracts@^0.5.33":
+  version "0.5.33"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/contracts/-/contracts-0.5.33.tgz#1adeb902ff849152ecdb8639af5ba76dfc27c213"
+  integrity sha512-lOj0psjl/7oydUXuSXhZ3P55zAXBNSgK6OzZeCW6JQ+drN+1OEdyp/MYKrSh8Cw8fW2k9MMdWbOuTa7/Blb0hA==
   dependencies:
-    "@eth-optimism/core-utils" "0.9.2"
+    "@eth-optimism/core-utils" "0.9.3"
     "@ethersproject/abstract-provider" "^5.6.1"
     "@ethersproject/abstract-signer" "^5.6.2"
 
-"@eth-optimism/core-utils@0.9.2":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/core-utils/-/core-utils-0.9.2.tgz#f31241de997ec5dc8a4095d044d12f0558bb9f32"
-  integrity sha512-wUP75gZu1rZ+taXwUtcw00qCUbDkcn16JcIIK/j7XnzgaEnyXExn+ivz3rivFbr5Ool4c5M+iVzVF99sPZrCPA==
+"@eth-optimism/core-utils@0.9.3":
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/core-utils/-/core-utils-0.9.3.tgz#40c0271f815af68e0a4715e97a045a96462df7b6"
+  integrity sha512-b3V8qBgM0e85wdp3CNdJ6iSUvjT2k86F9oCAYeCIXQcQ6+EPaetjxP0T6ct6jLVepnJjoPRlW/lvWslKk1UBGg==
   dependencies:
     "@ethersproject/abstract-provider" "^5.6.1"
+    "@ethersproject/properties" "^5.6.0"
     "@ethersproject/providers" "^5.6.8"
     "@ethersproject/transactions" "^5.6.2"
+    "@ethersproject/web" "^5.6.1"
     bufio "^1.0.7"
     chai "^4.3.4"
     ethers "^5.6.8"
