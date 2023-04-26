@@ -1,0 +1,23 @@
+{
+  "name": "tron",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node src/index",
+    "lint": "eslint src/**/*.ts"
+  },
+  "prettier": "@xwartz/prettier",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@xwartz/eslint-config-ts": "^1.0.0",
+    "@xwartz/prettier": "^1.0.0",
+    "eslint": "^8.37.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "tronweb": "^5.1.0"
+  }
+}
