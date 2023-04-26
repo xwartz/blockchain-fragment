@@ -14,9 +14,11 @@ import {
   unfreezeBalanceV2,
 } from './tx'
 
+const TRON_UNIT = 1e6
+
 const main = async () => {
   const undelegateTx = await undelegateResource(
-    10e6,
+    TRON_UNIT,
     TEST_ADDRESS,
     RESOURCE.BANDWIDTH,
     TEST_RECEIVE_ADDRESS,
@@ -24,7 +26,7 @@ const main = async () => {
   console.log('undelegateTx', JSON.stringify(undelegateTx, null, 2))
 
   const delegateTx = await delegateResource(
-    10e6,
+    TRON_UNIT,
     TEST_RECEIVE_ADDRESS,
     RESOURCE.BANDWIDTH,
     TEST_ADDRESS,
@@ -32,10 +34,14 @@ const main = async () => {
   )
   console.log('delegateTx', JSON.stringify(delegateTx, null, 2))
 
-  const freezeTx = await freezeBalanceV2(10e6, RESOURCE.BANDWIDTH, TEST_ADDRESS)
+  const freezeTx = await freezeBalanceV2(TRON_UNIT, RESOURCE.BANDWIDTH, TEST_ADDRESS)
   console.log('freezeTx', JSON.stringify(freezeTx, null, 2))
 
-  const unfreezeTx = await unfreezeBalanceV2(10e6, RESOURCE.BANDWIDTH, TEST_ADDRESS)
+  const unfreezeTx = await unfreezeBalanceV2(
+    TRON_UNIT,
+    RESOURCE.BANDWIDTH,
+    TEST_ADDRESS,
+  )
   console.log('unfreezeTx', JSON.stringify(unfreezeTx, null, 2))
 
   const delegatedResourceAccountIndexV2 = await getDelegatedResourceAccountIndexV2(
@@ -59,17 +65,17 @@ const main = async () => {
     .filter((f: { type: string }) => f.type !== 'ENERGY' && f.type !== 'TRON_POWER')
     .map((f: { amount: number }) => f.amount)
   const frozenBandwidth =
-    frozenBandwidths.reduce((a: number, b: number) => a + b, 0) / 1e6
+    frozenBandwidths.reduce((a: number, b: number) => a + b, 0) / TRON_UNIT
   console.log('frozenBandwidth', frozenBandwidth)
 
   const frozenEnergies = account.frozenV2
     .filter((f: { type: string }) => f.type === 'ENERGY')
     .map((f: { amount: number }) => f.amount)
   const frozenEnergy =
-    frozenEnergies.reduce((a: number, b: number) => a + b, 0) / 1e6
+    frozenEnergies.reduce((a: number, b: number) => a + b, 0) / TRON_UNIT
   console.log('frozenEnergy', frozenEnergy)
 
-  const balance = account.balance / 1e6
+  const balance = account.balance / TRON_UNIT
   console.log('balance', balance)
 
   const resources = await getAccountResources(TEST_ADDRESS)
