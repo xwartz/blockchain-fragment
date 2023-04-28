@@ -12,6 +12,7 @@ import {
   freezeBalanceV2,
   undelegateResource,
   unfreezeBalanceV2,
+  withdrawExpireUnfreeze,
 } from './tx'
 
 const TRON_UNIT = 1e6
@@ -57,6 +58,9 @@ const main = async () => {
 
   const canWithdrawUnfreezeAmount = await getCanWithdrawUnfreezeAmount(TEST_ADDRESS)
   console.log('canWithdrawUnfreezeAmount', canWithdrawUnfreezeAmount)
+
+  const withdrawTx = await withdrawExpireUnfreeze(TEST_ADDRESS)
+  console.log('withdrawTx', JSON.stringify(withdrawTx, null, 2))
 
   const account = await getAccount(TEST_ADDRESS)
   console.log('account', JSON.stringify(account, null, 2))

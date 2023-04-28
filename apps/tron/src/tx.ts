@@ -51,3 +51,7 @@ export const undelegateResource = (
     address,
   )
 }
+
+export const withdrawExpireUnfreeze = (address: string) => {
+  return tronWeb.transactionBuilder.withdrawExpireUnfreeze(address)
+}
